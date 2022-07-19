@@ -1,0 +1,282 @@
+.header {
+    height: var(--height-header);
+    background-color: var(--while-color);
+    padding: 8px 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-title {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.header__title-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    display: block;
+    padding: 8px 16px;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.header__nav-item {
+    padding: 8px 16px;
+    font-size: 1.5rem;
+}
+
+.header__nav-item:hover
+,.header__nav-title:hover {
+    background-color: #ccc;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    letter-spacing: 2px;
+}
+
+/* App container */
+
+/* Banner */
+.banner {   
+    margin-top: var(--height-header);
+    position: relative;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+.banner__text {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #585a5d;
+    position: absolute;
+    bottom: 0;
+    line-height: 5.4rem;
+    padding: 22px 24px;
+    opacity: 0.7;
+    letter-spacing: 5px;
+}
+
+/* Content */
+
+.catering, .our-menu {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.catering__img img{
+    border-radius: 4px;
+    width: 100%;
+}
+
+.catering__content {
+    padding-top: 12px ;
+    padding-bottom: 12px ;
+
+}
+
+.catering__title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    margin: 10px 0;
+    line-height: 5.6rem;
+}
+
+.catering__sub-title {
+    font-size: 1.8rem;
+    text-align: center;
+    display: block;
+    margin: 60px 0 10px 0;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+.catering__desc {
+    font-size: 1.8rem;
+    margin: 18px 0;
+    line-height: 1.5;
+
+}
+
+.catering__sub-desc {
+    font-size: 1.8rem;
+    margin: 18px 0;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.catering__desc--highlight {
+    background-color: #f1f1f1;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+/* Border */
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Our Menu */
+
+.our-menu {
+
+}
+
+.our-menu__content {
+
+}
+
+.our-menu__title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    margin: 15px 0 56px 0;
+    line-height: 5.6rem;
+}
+
+.our-menu__content {
+
+}
+
+.our-menu__desc {
+    font-size: 2rem;
+    margin: 48px 0 10px 0;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.our-menu__sub-desc {
+    font-size: 1.5rem;
+    color: #757575;
+    margin: 15px 0;
+}
+
+.our-menu__img img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Contact */
+
+.contact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.contact__desc {
+
+}
+
+.contact__desc-title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    line-height: 5.6rem;
+    margin-bottom: 46px;
+}
+
+.contact__desc-text {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    line-height: 1.8rem;
+}
+
+.contact__desc-addr {
+    font-size: 1.8rem;
+    margin: 18px 0;
+    font-weight: 600;
+    color: #607d8b;
+    line-height: 2rem;
+}
+
+.contact__form {
+   
+
+}
+
+.contact__form-guide {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 15px 0;
+}
+
+
+
+.form__input-list {
+
+}
+
+.form__input-item {
+    margin-top: 15px;
+    padding: 16px 8px;
+    outline: #607d8b;;
+    height: 56px;
+    width: 100%;
+    border: unset;
+    border-bottom: 1px solid #ccc;
+}
+
+.form__input-item:focus {
+    border-bottom: 2px solid #607d8b;;
+}
+
+.form__input-submit {
+    border: none;
+    background-color: #f1f1f1;
+    margin: 30px 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.form__input-submit:hover {
+    background-color: #ccc;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.copyright {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 15px 0;
+}
+
+.copyright__author {
+    color: var(--primary-text-color);
+}
+
+

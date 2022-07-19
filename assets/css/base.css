@@ -1,0 +1,24 @@
+:root {
+    --while-color: #fff;
+    --black-color: #000;
+    --primary-text-color: #000;
+    --second-text-color: #75809d;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    --height-header: 56px;
+}
+
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* font-family: 'Roboto', sans-serif; */
+    box-sizing: border-box;
+}
