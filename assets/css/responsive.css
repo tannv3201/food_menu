@@ -1,0 +1,132 @@
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px)  {
+    .our-menu__body {
+        width: 450px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .catering__title {
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        margin: 0;
+        line-height: 3.6rem;
+    }
+
+    .catering__sub-title {
+        font-size: 1.8rem;
+        text-align: center;
+        display: block;
+        margin: 28px 0 0 0;
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+
+    .catering__desc {
+        font-size: 1.8rem;
+        margin: 14px 0 0 0;
+        line-height: 1.4;
+    }
+
+    .our-menu__desc {
+        font-size: 2rem;
+        margin: 22px 0 9px 0;
+        line-height: 1.2;
+        letter-spacing: 5px;
+    }
+
+    .our-menu__title {
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        margin: 0 0 32px 0;
+        line-height: 3.6rem;
+    }
+
+    .our-menu__sub-desc {
+        margin: 0;
+    }
+
+   
+}
+
+/* Tablet & mobile */
+@media (max-width:1023px) {
+   
+    .nav__bar-btn {
+        display: block;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .catering__content {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    
+}
+
+@media (max-width:739px) {
+    
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__nav {
+        justify-content: center;
+    }
+
+    .catering__desc {
+        padding: 0 24px;
+        line-height: 1.6;
+    }
+
+    .our-menu {
+        padding: 0 24px;
+    }
+
+    .contact {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .our-menu__desc {
+        letter-spacing: 3px;
+        margin-top: 32px;
+    }
+
+    .our-menu__sub-desc,
+    .contact__desc-text,
+    .contact__form-guide {
+        line-height: 1.6;
+    }
+
+    .our-menu__img img {
+        margin-top: 24px;
+    }
+
+
+    .contact__desc-addr {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+
+    .form__input-item {
+        height: 60px;
+    }
+
+    .form__input-submit {
+        width: 100%;
+        padding: 22px 12px;
+    }
+
+
+}

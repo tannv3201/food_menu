@@ -21,21 +21,60 @@
 
         <!-- Begin Header -->
         <header class="header">
-            <div class="header__nav">
+            <!-- Mobile navbar -->
+            <label for="nav-mobile-input" class="nav__bar-btn">
+                <i class="ti-align-justify"></i>
+            </label>
+            <input hidden type="checkbox" class="nav__input" id="nav-mobile-input">
+            <label for="nav-mobile-input" class="nav__overlay"></label>
+            <nav class="nav__mobile">
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                    <i class="ti-close"></i>
+                </label>
+                <ul class="nav__mobile-list">
+                    <li>
+                        <a href="#" class="nav__mobile-link">
+                            <i class="ti-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#app_about" class="nav__mobile-link">
+                            <i class="ti-info"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#app_menu" class="nav__mobile-link">
+                            <i class="ti-layout-menu-v"></i>
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#app_contact" class="nav__mobile-link">
+                            <i class="ti-mobile"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Nav PC - Tablet -->
+            <div class="header__nav ">
                 <div class="header__nav-title">
-                    <a href="" class="header__title-link">
+                    <a href="#" class="header__title-link">
                         Gourmet au Catering
                     </a>
                 </div>
-                <ul class="header__nav-list">
+                <ul class="header__nav-list hide-on-mobile">
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">About</a>
+                        <a href="#app_about" class="header__nav-link">About</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Menu</a>
+                        <a href="#app_menu" class="header__nav-link">Menu</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Contact</a>
+                        <a href="#app_contact" class="header__nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -51,14 +90,14 @@
 
             <div class="content">
                 <div class="grid wide">
-                    <div class="catering">
-                        <div class="row">
-                            <div class="col l-6 m-6 catering__img">
+                    <div id="app_about" class="catering">
+                        <div class="row sm-gutter">
+                            <div class="col l-6 m-6 c-0 catering__img">
                                 <img src="./assets/img/catering.jpg" alt="">
                             </div>
-                            <div class="col l-6 m-6 catering__content">
+                            <div class="col l-6 m-6 c-12 catering__content">
                                 <h3 class="catering__title">About Catering</h3>
-                                <span class="catering__sub-title">Tradition since 1889</span>\
+                                <span class="catering__sub-title">Tradition since 1889</span>
                                 <p class="catering__desc">
                                     The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor
@@ -68,7 +107,7 @@
                                     pariatur.We only use <span class="catering__desc--highlight">seasonal</span>
                                     ingredients.
                                 </p>
-                                <p class="catering__sub-desc">Excepteur sint occaecat cupidatat non proident, sunt in
+                                <p class="catering__sub-desc hide-on-mobile-tablet">Excepteur sint occaecat cupidatat non proident, sunt in
                                     culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
                                     sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -79,9 +118,9 @@
 
                     <hr>
 
-                    <div class="our-menu">
-                        <div class="row">
-                            <div class="col l-6 m-6 our-menu__content">
+                    <div id="app_menu" class="our-menu">
+                        <div class="row sm-gutter">
+                            <div class="col l-6 m-6 c-12 our-menu__content">
                                 <h3 class="our-menu__title">
                                     Our Menu
                                 </h3>
@@ -114,20 +153,17 @@
                                     <p class="our-menu__sub-desc">With syrup, butter and lots of berries 8.50</p>
                                 </div>
                             </div>
-                            <div class="col l-6 m-6 our-menu__img">
+                            <div class="col l-6 m-6 c-12 our-menu__img">
                                 <img src="./assets/img/ourmenu.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <hr>
 
-            <hr>
-
-            <div class="contact">
+            <div id="app_contact" class="contact">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 c-12">
                             <div class="contact__desc">
                                 <h3 class="contact__desc-title">Contact</h3>
                                 <p class="contact__desc-text">
@@ -162,6 +198,10 @@
                     </div>
                 </div>
             </div>
+                </div>
+            </div>
+
+            
         </div>
         <!-- End App container -->
 
