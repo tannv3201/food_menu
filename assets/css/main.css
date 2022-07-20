@@ -273,11 +273,14 @@ hr {
 .nav__bar-btn {
     width: 28px;
     height: 28px;
-    line-height: 28px;
     color: #000;
     display: none;
     margin-left: 8px;
+    font-size: 1.4rem;
+    line-height: 28px;
 }
+
+
 
 .nav__overlay {
     position: fixed;
